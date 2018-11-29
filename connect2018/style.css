@@ -1,0 +1,12 @@
+#jct_sample {
+height: 160px;
+line-height: 160px;
+border-top: #ff0000 solid 1000px;
+border-bottom: #ff0000 solid 10px;
+margin-bottom: 40px;
+}
+
+#jct_sample span {
+font-size: 150%;
+color: #ff0000;
+}

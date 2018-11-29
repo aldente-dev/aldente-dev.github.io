@@ -4,19 +4,122 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Aldente Developer Portal</title>
+    <title>Connect();2018 - 日本のみんなでつながって成長していくサイト... 多分日々進化してく？</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript">
+        function CountdownTimer(elm, tl, mes) {
+            this.initialize.apply(this, arguments);
+        }
+        CountdownTimer.prototype = {
+            initialize: function (elm, tl, mes) {
+                this.elem = document.getElementById(elm);
+                this.tl = tl;
+                this.mes = mes;
+            }, countDown: function () {
+                var timer = '';
+                var today = new Date();
+                var day = Math.floor((this.tl - today) / (24 * 60 * 60 * 1000));
+                var hour = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+                var min = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / (60 * 1000)) % 60;
+                var sec = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / 1000) % 60 % 60;
+                var milli = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / 10) % 100;
+                var me = this;
+
+                if ((this.tl - today) > 0) {
+                    if (day) timer += '<span class="day">' + day + '日と</span>';
+                    if (hour) timer += '<span class="hour">' + hour + '時間</span>';
+                    timer += '<span class="min">' + this.addZero(min) + '分</span>';
+                    this.elem.innerHTML = timer;
+                    tid = setTimeout(function () { me.countDown(); }, 10);
+                } else {
+                    this.elem.innerHTML = this.mes;
+                    return;
+                }
+            }, addZero: function (num) { return ('0' + num).slice(-2); }
+        }
+        function CDTimer() {
+            var text = '開始まで :';
+            var tl = new Date('2018/12/05 01:00:00');
+            var timer = new CountdownTimer('CDTimer', tl, '始まりました！');
+            timer.countDown();
+            target = document.getElementById("text");
+            target.innerHTML = text;
+        }
+        window.onload = function () {
+            CDTimer();
+        }
+    </script>
 </head>
 
 <body>
-    <p>Test</p>
+    <div id="countdown_part">
+        <span class="timetext" id="text"></span><span id="CDTimer"></span>
+    </div>
+    <p><a href="http://aka.ms/connectevent" target="_blank"><img src="./media/Connect-Go-Live_EA_R1-A_TW.gif" /></a></p>
+    <p>日本時間の12月5日午前1時半から、Twitterで解説します。視聴の方も是非Twitterでコメントしてください！</p>
+    <p>始まる前の期待コメントも大歓迎！ハッシュタグは、#MSFTConnect</p>
     <p>
-        <a href="https://twitter.com/intent/tweet?button_hashtag=msftconnect&ref_src=twsrc%5Etfw" class="twitter-hashtag-button"
-            data-show-count="false">Tweet #msftconnect</a>
+        <a href="https://twitter.com/intent/tweet?button_hashtag=MSFTConnect&ref_src=twsrc%5Etfw" class="twitter-hashtag-button"
+            data-show-count="false">Tweet #MSFTConnect</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </p>
+    <p>素敵なTweetをしてくれた方にはプレゼントもあるらしい… 詳細は後程お知らせ</p>
+    <p>
+        当日、Twitterで生ライブで解説するのは、マイクロソフトの以下の人達
+        <ul>
+            <li><a href="https://twitter.com/yoshioterada" target="_blank">@yoshioterada</a></li>
+            <li><a href="https://twitter.com/Moriyamakyohei" target="_blank">@Moriyamakyohei</a></li>
+            <li><a href="https://twitter.com/satonaoki" target="_blank">@satonaoki</a></li>
+            <li><a href="https://twitter.com/chack411" target="_blank">@chack411</a></li>
+            <li><a href="https://twitter.com/chomado" target="_blank">@chomado</a></li>
+            <li><a href="https://twitter.com/kazumihirose" target="_blank">@kazumihirose</a></li>
+            <li><a href="https://twitter.com/dahatake" target="_blank">@dahatake</a></li>
+            <li><a href="https://twitter.com/MS_odasho" target="_blank">@MS_odasho</a></li>
+            <li><a href="https://twitter.com/embedded_george" target="_blank">@embedded_george</a></li>
+        </ul>
+        多分、事前に色々な人達がつぶやいている。<a href="https://twitter.com/hashtag/MSConnect" target="_blank">#MSFTConnectをチラ見しよう</a>
+    </p>
+    <br />
+    <p><u>同時開催 - Twitterでつぶやいて豪華賞品をげっとぉ！</u></p>
+    <p>Socialイベント参加方法</p>
+    <p>期間：12 月 5 日 (水) 1 時 30分 ～ 12月６日時 0時</p>
+    <p>
+        ルール：<br />
+        期間中に #MSFTConnect とメディアの ＃ をつけて Connect に関する内容をツイートしていただいた方の中から、メディア各社が独自のクライテリアで選出されます。<br />
+        賞品の発送については、メディア各社がツイッターのダイレクトメッセージでご連絡の上発送しますので、必ず各メディアのツイッターをフォローしてください。<br />
+        また発表は、賞品の発送をもって代えさせていただきますので、ご了承ください。
+    </p>
+    <p>各社からの商品とクライテリアは以下の通り! ※ どんどん追加されてくよー
+        <dl>
+            <dt>インプレス賞</dt>
+            <dd>
+                <p>
+                    賞品<br />
+                    Japan Conteiner Days(JKD)賞 (1 名)：Surface Laptop2<br />
+                    Think IT 賞 (1 名)：Fire HD 10 タブレット 32GB<br />
+                    選定のクライテリア<br />
+                    JKD賞：Connect();のコンテナ技術に関する内容が含まれているツイートで判断します。<br />
+                    Think IT賞：いいね数、ツイート・リツイート回数の多いツイートの中から総合的に判断します。<br />
+                    アカウント: @thinkitcojp <a href="https://twitter.com/thinkitcojp?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                        data-show-count="false">Follow
+                        @thinkitcojp</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br />
+                    ハッシュタグ: #thinkitcojp<br />
+                </p>
+            </dd>
+        </dl>
+    </p>
+    <!--
+    <p>
+        <a class="twitter-timeline" href="https://twitter.com/embedded_george/lists/connect2018experts?ref_src=twsrc%5Etfw">当日つぶやく人たちに日常</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </p> 
+-->
+    <p>そっけないサイトですね…そう思われた方は、Pull/Reqで、コントリビューションよろしくね！<br />
+        <a href="https://github.com/aldente-dev/aldente-dev.github.io" target="_blank">開発サイト</a></p>
 </body>
 
 </html>
