@@ -57,8 +57,20 @@ p{
     width: 100%;
 }
 .table th{
-    white-space: nowrap;
     vertical-align: middle;
+}
+@media screen and (min-width: 768px){
+    .table th{
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 768px){
+    .table th:first-child{
+        border: none;
+    }
+    .table th,.table td{
+        display: block;
+    }
 }
 .table td{
     width: 100%;
