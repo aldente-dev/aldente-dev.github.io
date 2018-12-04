@@ -10,359 +10,87 @@ margin-bottom: 40px;
 font-size: 150%;
 color: #ff0000;
 }
-    .wrap {
-        max-width: 1200px;
-        margin: 0 auto;
-        color: #333
-    }
+p{
+    margin-bottom: 1em;
+}
+.mv{
+    background: #232020;
+}
+.mv img{
+    width: 100%;
+}
+.hero-body .title,.hero-body .subtitle{
+    text-align: center;
+}
 
-    .breadcrumb {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 10px 0;
-        color: #333
-    }
+#first-message{
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+#first-content .live-member{
 
-    .h1Area {
-        background-color: #000;
-        line-height: 1.5em
-    }
+}
+#first-content .live-member .heading{
+    margin-top: 8px;
+}
+.live-member.level{
+    flex-wrap: wrap;
+}
+.live-member .level-item .image{
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 16px;
+}
+.live-member .is-rounded{
+    width: 128px;
+}
+.box .message-body .item-list li{
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.box .message-body .item-list li:last-child{
+    margin-bottom: 0;
+}
+.table{
+    width: 100%;
+}
+.table th{
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.table td{
+    width: 100%;
+    vertical-align: middle;
+}
 
-    h1 {
-        max-width: 1200px;
-        margin: 0 auto
-    }
+.notes li{
+    font-size: .9rem;
+    margin-bottom: .5rem;
+    list-style: disc;
+    margin-left: 2em;
+}
 
-    h2 {
-        text-align: left;
-        font-size: 150%;
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 20px
-    }
+.last-message{
+    text-align: center;
+    font-size: .9rem;
+    margin-top: 64px;
+    background: #f5f5f5;
+    padding: 16px;
 
-    h3 {
-        text-align: left;
-        font-size: 130%;
-        font-weight: bold;
-        color: #333;
-        margin-top: 30px;
-        margin-bottom: 20px
-    }
-
-    .heroArea {
-        position: relative;
-        height: 0;
-        padding-top: 25%;
-        background-image: url("//c.s-microsoft.com/ja-jp/CMSImages/connect2017_hero_pc.jpg?version=4d2ab18a-29e1-05e8-8046-5e2e1e500d67");
-        background-size: contain
-    }
-
-    .heroArea h2 {
-        position: absolute;
-        color: #fff;
-        font-weight: bold;
-        top: 25%;
-        left: 3%;
-        text-align: left;
-        font-size: 170%;
-        margin-top: 0
-    }
-
-    .heroArea a {
-        position: absolute;
-        padding: 10px 15px;
-        text-align: center;
-        border: 1px solid #d0d0d0;
-        background-color: #fff;
-        color: #0078d7;
-        bottom: 10%;
-        left: 3%;
-        font-size: 150%
-    }
-
-    .streaming {
-        background-color: #000;
-        padding: 20px 0
-    }
-
-    .streamingLive {
-        position: relative;
-        max-width: 640px;
-        border: 1px solid #333
-    }
-
-    .streamingLive:before {
-        content: "";
-        display: block;
-        padding-top: 56.25%
-    }
-
-    .streamingContent {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%
-    }
-
-    .streamingTitle h1 {
-        text-align: left;
-        font-size: 110%;
-        color: #fff;
-        padding-top: 34%
-    }
-
-    .endCaption {
-        background-color: #ff9
-    }
-
-    .endCaption p {
-        font-size: 120%;
-        font-weight: bold;
-        color: #333;
-        padding: 10px
-    }
-
-    .MSFTConnect {
-        border: 1px solid #d0d0d0;
-        padding: 10px;
-        margin-top: 20px
-    }
-
-    .MSFTConnect h2 {
-        color: #0078d7;
-        margin-top: 0;
-        margin-bottom: 10px
-    }
-
-    .MSFTConnect p {
-        font-size: 120%
-    }
-
-    .twittterArea {
-        margin-top: 20px
-    }
-
-    .ebanjeArea {
-        border: 1px solid #d0d0d0;
-        padding: 10px;
-        margin-top: 20px
-    }
-
-    .ebanje {
-        padding-bottom: 20px
-    }
-
-    p.ebjText,
-    p.eveText {
-        font-size: 110%
-    }
-
-    .ebjName {
-        font-size: 110%;
-        font-weight: bold
-    }
-
-    .ebjDescription {
-        font-size: 65%
-    }
-
-    .ebjAccount {
-        font-size: 75%;
-        font-weight: bold
-    }
-
-    .eventArea {
-        border: 1px solid #d0d0d0;
-        padding: 10px;
-        margin-top: 20px
-    }
-
-    .eventArea p.account,
-    .eventArea p.hush {
-        font-weight: bold
-    }
-
-    table.evePresent {
-        width: 100%
-    }
-
-    table.evePresent th,
-    table.evePresent td {
-        border: 1px solid #d0d0d0;
-        font-size: .9em
-    }
-
-    table.evePresent th {
-        color: #fff;
-        font-weight: bold;
-        padding: 3px;
-        background-color: #0078d7;
-        width: 30%
-    }
-
-    table.evePresent td {
-        padding: 3px
-    }
-
-    table.evePresent td.eveImg {
-        position: relative;
-        padding: 0
-    }
-
-    .evePresent img.evePresevtPC {
-        width: 100%
-    }
-
-    .evePresent td p.imgCaption {
-        position: absolute;
-        bottom: 0;
-        left: 5px;
-        font-size: .9em
-    }
-
-    .ebnjeNote {
-        text-align: right;
-        font-weight: bold
-    }
-
-    .sponsorArea {
-        padding: 10px
-    }
-
-    .sponsorArea h2 {
-        margin-bottom: 0
-    }
-
-    span.blue {
-        color: #0078d7
-    }
-
-    span.bd {
-        font-weight: bold
-    }
-
-    span.small {
-        font-size: .7em
-    }
-
-    .disclaimer {
-        font-size: 80%;
-        margin-top: 40px
-    }
-
-    @media screen and (max-width:1200px) {
-        .heroArea h2 {
-            font-size: 2.5vw
-        }
-
-        .heroArea a {
-            font-size: 2vw
-        }
-    }
-
-    @media screen and (min-width:540px) {
-
-        .heroAreaSP,
-        .ebanjeSP,
-        .sponsorSP,
-        .streamingTitle h1.SP,
-        .evePresevtSP {
-            display: none
-        }
-    }
-
-    @media screen and (max-width:539px) {
-
-        .heroArea,
-        .ebanjePC,
-        .sponsorPC,
-        .streamingTitle h1.PC,
-        .evePresevtPC,
-        br.PC {
-            display: none
-        }
-
-        .heroAreaSPHero {
-            position: relative;
-            height: 0;
-            padding-top: 27.77%;
-            background-image: url("//c.s-microsoft.com/ja-jp/CMSImages/connect2017_hero_sp.jpg?version=9d94119f-7557-43b8-c074-d7449244e0b6");
-            background-size: contain
-        }
-
-        .heroAreaSPHero h2 {
-            position: absolute;
-            color: #fff;
-            font-size: 3.5vw;
-            font-weight: bold;
-            top: 20%;
-            left: 8%;
-            text-align: left;
-            margin-top: 0
-        }
-
-        .heroAreaSP .heroAreaSPBtn {
-            padding: 10px 20px;
-            text-align: center;
-            vertical-align: middle;
-            border: 1px solid #d0d0d0;
-            background-color: #fff;
-            color: #0078d7
-        }
-
-        .streaming {
-            padding-top: 20px;
-            padding-bottom: 0
-        }
-
-        .streamingTitle h1 {
-            font-size: 100%;
-            padding: 0 0 10px 0
-        }
-
-        .displayOrder {
-            position: relative
-        }
-
-        .displayOrder01 {
-            position: absolute;
-            height: 900px;
-            top: 0
-        }
-
-        .displayOrder02 {
-            padding-top: 900px
-        }
-
-        .ebanjeSP {
-            width: 100px
-        }
-
-        .evePresevtSP {
-            width: 100%
-        }
-
-        table.evePresent th,
-        table.evePresent td {
-            display: block;
-            width: 100%
-        }
-
-        .sponsorSP {
-            width: 150px
-        }
-
-        #connect-banner{
-            width: 450px;
-        }
-    }
-
-    .row-div{
-        float: left;
-    }
-
-    .line-break{
-        clear: both;
-    }
+    
+}
+.disclaimer{
+    margin-top: 32px;
+    text-align: center;
+    font-size: .8rem;
+}
+.container{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.subtitle.is-5.has-text-grey{
+    margin-bottom: 16px;
+    margin-top: 32px;
+}
