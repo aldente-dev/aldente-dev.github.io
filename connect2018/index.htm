@@ -20,7 +20,8 @@
                 this.elem = document.getElementById(elm);
                 this.tl = tl;
                 this.mes = mes;
-            }, countDown: function () {
+            },
+            countDown: function () {
                 var timer = '';
                 var today = new Date();
                 var day = Math.floor((this.tl - today) / (24 * 60 * 60 * 1000));
@@ -35,13 +36,19 @@
                     if (hour) timer += '<span class="hour">' + hour + '時間</span>';
                     timer += '<span class="min">' + this.addZero(min) + '分</span>';
                     this.elem.innerHTML = timer;
-                    tid = setTimeout(function () { me.countDown(); }, 10);
+                    tid = setTimeout(function () {
+                        me.countDown();
+                    }, 10);
                 } else {
                     this.elem.innerHTML = this.mes;
                     return;
                 }
-            }, addZero: function (num) { return ('0' + num).slice(-2); }
+            },
+            addZero: function (num) {
+                return ('0' + num).slice(-2);
+            }
         }
+
         function CDTimer() {
             var text = '開始まで :';
             var tl = new Date('2018/12/05 01:00:00');
@@ -97,7 +104,8 @@
             <p>日本時間の12月5日午前1時半から、Twitterで解説します。視聴の方も是非Twitterでコメントしてください！<br>始まる前の期待コメントも大歓迎！ハッシュタグは、<a href="https://twitter.com/hashtag/MSFTConnect?src=hash"
                     target="_blank"></a>#MSFTConnect <span style="margin-left: 16px; display: inline-block;"><a href="https://twitter.com/intent/tweet?button_hashtag=MSFTConnect&ref_src=twsrc%5Etfw"
                         class="twitter-hashtag-button" data-show-count="false">Tweet #MSFTConnect</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span></p>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </span></p>
             <p>素敵なTweetをしてくれた方にはプレゼントもあるらしい… 詳細は後程お知らせ</p>
         </div>
         <div id="first-content" class="box">
@@ -116,7 +124,7 @@
                         <a href="https://twitter.com/Moriyamakyohei" target="_blank">
                             <div><img class="is-rounded is-128x128" src="https://pbs.twimg.com/profile_images/1004241172254998528/gPisn2JV_400x400.jpg"
                                     alt=""></div>
-                            <p class="heading">森山恭平 <br>@Moriyamakyohei</p>
+                            <p class="heading">森山京平（sasukeh） <br>@Moriyamakyohei</p>
                         </a>
                     </div>
                 </div>
