@@ -353,4 +353,16 @@ color: #ff0000;
         .sponsorSP {
             width: 150px
         }
+
+        #connect-banner{
+            width: 450px;
+        }
+    }
+
+    .row-div{
+        float: left;
+    }
+
+    .line-break{
+        clear: both;
     }
