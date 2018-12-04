@@ -19,6 +19,9 @@ p{
 .mv img{
     width: 100%;
 }
+.mv.iframe-centering {
+    text-align: center;
+}
 .hero-body .title,.hero-body .subtitle{
     text-align: center;
 }
